@@ -1,0 +1,71 @@
+1
+00:00:00,000 --> 00:00:06,417
+Lecture Replay Assistant helps students revisit a specific idea in a recorded lesson.
+
+2
+00:00:06,417 --> 00:00:12,833
+Instead of scanning a whole recording, search the prepared transcript and select a timestamp.
+
+3
+00:00:12,833 --> 00:00:16,740
+This sample is a sixty second synthetic lesson about vectors.
+
+4
+00:00:16,740 --> 00:00:20,646
+It has no audio.
+
+5
+00:00:20,646 --> 00:00:24,552
+Its twelve bilingual captions were written manually and aligned to the teaching slides.
+
+6
+00:00:24,552 --> 00:00:28,458
+This is not an automatic transcription result.
+
+7
+00:00:28,458 --> 00:00:33,125
+Here, searching for span filters the transcript.
+
+8
+00:00:33,125 --> 00:00:37,792
+Selecting the twenty second result moves the player to the matching slide.
+
+9
+00:00:37,792 --> 00:00:42,458
+The video timeline and the current caption use the same timestamp.
+
+10
+00:00:42,458 --> 00:00:46,458
+English search ignores letter case.
+
+11
+00:00:46,458 --> 00:00:50,458
+Uppercase VECTOR finds the same nine captions as lowercase vector.
+
+12
+00:00:50,458 --> 00:00:54,667
+Chinese keywords also work.
+
+13
+00:00:54,667 --> 00:00:58,875
+This search finds the nine captions containing the Chinese word for vector.
+
+14
+00:00:58,875 --> 00:01:04,083
+If a keyword does not match, the interface shows a clear empty state.
+
+15
+00:01:04,083 --> 00:01:09,292
+Clearing the search restores all twelve transcript entries.
+
+16
+00:01:09,292 --> 00:01:15,569
+This walkthrough uses captured screens from the working prototype, with English on-screen explanations and no audio.
+
+17
+00:01:15,569 --> 00:01:21,847
+Browser playback, search and three timestamp jumps were checked.
+
+18
+00:01:21,847 --> 00:01:28,125
+AI transcription, concept extraction and Intel Arc Pro B70 deployment remain planned and have not been validated.

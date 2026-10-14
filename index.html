@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find a topic in a lecture transcript and jump to its video timestamp.">
+  <title>Lecture Replay Assistant</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23176b50'/%3E%3Ctext x='7' y='30' font-size='30' fill='white'%3E↻%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span class="brand-icon" aria-hidden="true">↻</span> Lecture Replay</a>
+    <span class="badge">Working prototype · October 2026</span>
+  </header>
+  <main>
+    <div class="intro"><div><p class="eyebrow">LESS SCROLLING. MORE UNDERSTANDING.</p>
+      <h1>Return to the idea.</h1><p class="lede">Search a lecture transcript. Jump to the moment you need.</p></div>
+      <button id="load-demo" class="primary" type="button">Load sample lesson</button>
+    </div>
+    <p id="status" role="status" aria-live="polite">Loading the sample lesson…</p>
+    <section class="workspace" aria-label="Lecture review workspace">
+      <div class="player-panel">
+        <div class="panel-heading"><span class="eyebrow">LESSON PLAYER</span><span id="video-name" class="muted">Sample lesson</span></div>
+        <video id="video" controls preload="metadata" playsinline poster="assets/poster.png" aria-label="Lecture video"></video>
+        <div class="lesson-caption"><div><span class="eyebrow">SAMPLE LESSON</span><h2>Vectors, span &amp; independence</h2></div><span class="badge">60 seconds</span></div>
+        <p id="media-note" class="disclosure">Synthetic teaching slides with no audio. The supplied English / Chinese captions are manually authored, not speech recognition results.</p>
+        <div class="now"><span class="eyebrow">AT THIS MOMENT</span><p id="current-caption">Play the video or select a transcript entry.</p></div>
+        <details class="import-panel"><summary>Use your own video and subtitles</summary>
+          <p class="muted">Choose a browser-compatible video and its UTF-8 .srt file. Your files stay in this browser.</p>
+          <label>Video file<input id="video-file" type="file" accept="video/*,.mp4,.webm,.mov"></label>
+          <label>Subtitle file (SRT)<input id="subtitle-file" type="file" accept=".srt,text/plain,application/x-subrip"></label>
+        </details>
+      </div>
+      <section class="transcript-panel" aria-labelledby="transcript-heading">
+        <div class="panel-heading"><h2 id="transcript-heading">Transcript</h2><span id="count" class="badge">0 entries</span></div>
+        <label class="search-label" for="search">Find a word or concept</label>
+        <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Try “span”, “VECTOR” or “向量”" autocomplete="off"><button id="clear-search" type="button" aria-label="Clear search">×</button></div>
+        <p class="search-hint">Select a timestamp to jump. Search matches caption text.</p>
+        <div id="transcript" class="transcript-list" aria-label="Transcript entries"></div>
+      </section>
+    </section>
+    <footer><span>Lecture Replay Assistant</span><span>Prepared captions → text search → video timestamp</span><span>AI transcription &amp; B70 deployment: planned</span></footer>
+  </main>
+</body>
+</html>

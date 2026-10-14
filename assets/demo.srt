@@ -1,0 +1,59 @@
+1
+00:00:00,000 --> 00:00:05,000
+A vector has both direction and magnitude.
+向量同時具有方向與大小。
+
+2
+00:00:05,000 --> 00:00:10,000
+In two dimensions, a vector is an ordered pair.
+二維向量可寫成一組有序數對。
+
+3
+00:00:10,000 --> 00:00:15,000
+A linear combination scales and adds vectors.
+線性組合將向量縮放後相加。
+
+4
+00:00:15,000 --> 00:00:20,000
+For example, two copies of u plus one copy of v.
+例如，兩倍的 u 加上一倍的 v。
+
+5
+00:00:20,000 --> 00:00:25,000
+The span contains every linear combination of the vectors.
+張成空間包含這些向量的所有線性組合。
+
+6
+00:00:25,000 --> 00:00:30,000
+Two nonparallel vectors span the entire plane.
+兩個不平行的向量可張成整個平面。
+
+7
+00:00:30,000 --> 00:00:35,000
+Independent vectors cannot be made from each other.
+線性獨立的向量無法由彼此組合得到。
+
+8
+00:00:35,000 --> 00:00:40,000
+Only zero coefficients produce the zero vector.
+只有係數全為零時才得到零向量。
+
+9
+00:00:40,000 --> 00:00:45,000
+Parallel vectors are linearly dependent.
+平行向量是線性相依的。
+
+10
+00:00:45,000 --> 00:00:50,000
+Here, v is twice u, so the span is only a line.
+這裡 v 是 u 的兩倍，張成空間只有一條直線。
+
+11
+00:00:50,000 --> 00:00:55,000
+Vectors, linear combinations, span, and independence.
+複習：向量、線性組合、張成空間與線性獨立。
+
+12
+00:00:55,000 --> 00:01:00,000
+Search for span, then jump back to its explanation.
+搜尋 span，再跳回對應的講解片段。
