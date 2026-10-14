@@ -55,7 +55,8 @@ Caption rendering uses DOM text nodes. Search matches the supplied caption text;
 
 ## Demonstration and documentation
 
-- [Project proposal](docs/Lecture_Replay_Assistant_Proposal.pdf)
+- [Application demonstration on YouTube](https://youtu.be/zAp_sbnWf2w)
+- [Proposal slide deck (PDF)](docs/Lecture_Replay_Assistant_Proposal.pdf)
 - [English-captioned application walkthrough](docs/demo-walkthrough.mp4)
 - [Verification record](docs/validation.md)
 - [Sample asset provenance](assets/README.md)
